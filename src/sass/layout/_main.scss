@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generator {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 540px;
+  gap: 24px;
+
+  &__result-half {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 32px;
+    background-color: $dark;
+  }
+
+  &__result {
+    font-size: 32px;
+    font-weight: bold;
+    color: $light;
+    opacity: 0.25;
+  }
+
+  &__copy-btn {
+    background: none;
+    border: none;
+  }
+
+  &__settings-half {
+    background-color: $dark;
+    padding: 24px 32px 32px 32px;
+  }
+}

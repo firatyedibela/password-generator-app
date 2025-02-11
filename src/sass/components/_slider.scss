@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+
+.generator {
+  &__slider-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__slider-input {
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, $green 50%, $very-dark 50%);
+  }
+
+  &__slider-input::-webkit-slider-thumb {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $light;
+    cursor: pointer;
+  }
+
+  &__slider-input::-moz-range-thumb {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: $light;
+    cursor: pointer;
+  }
+
+  &__slider-input::-webkit-slider-thumb:active,
+  &__slider-input::-moz-range-thumb {
+    background-color: $very-dark;
+    border: 2px solid $green;
+  }
+
+  &__length-text {
+    font-size: 18px;
+    color: $light;
+  }
+
+  &__length-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: $green;
+  }
+}

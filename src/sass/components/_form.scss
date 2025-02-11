@@ -1,0 +1,121 @@
+@use '../abstracts/variables' as *;
+
+.generator {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__copy-icon:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+
+  &__options-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: $light;
+  }
+
+  &__checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $light;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+
+  &__checkbox::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../../assets/images/icon-check.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    display: none;
+  }
+
+  &__checkbox:checked {
+    border: none;
+    background-color: $green;
+
+    &::before {
+      display: block;
+    }
+  }
+
+  &__checkbox:hover {
+    border: 2px solid $green;
+  }
+
+  &__strength-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0px 32px;
+    background-color: $very-dark;
+  }
+
+  &__strength-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: $gray;
+  }
+
+  &__strength-bars-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__strength-bar {
+    width: 10px;
+    height: 28px;
+    border: 2px solid $light;
+  }
+
+  &__generate-btn {
+    padding: 19px 0px;
+    border: 2px solid $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+    font-size: 18px;
+    font-weight: bold;
+    color: $very-dark;
+    gap: 24px;
+    text-transform: uppercase;
+    transition: all 225ms;
+  }
+
+  &__generate-btn:hover {
+    background-color: $dark;
+    color: $green;
+
+    .generator__arrow-icon {
+      filter: brightness(0) saturate(100%) invert(78%) sepia(44%) saturate(311%)
+        hue-rotate(76deg) brightness(106%) contrast(104%);
+    }
+  }
+
+  &__arrow-icon {
+    width: 12px;
+    transition: all 300ms;
+  }
+}

@@ -1,3 +1,7 @@
 @use './abstracts/variables';
 @use './base/reset';
 @use './base/fonts';
+@use './layout/header';
+@use './layout/main';
+@use './components/form';
+@use './components/slider';

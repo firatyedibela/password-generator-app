@@ -16,5 +16,75 @@
 
     <title>Frontend Mentor | Password generator app</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Password Generator</h1>
+    </header>
+    <main class="main">
+      <div class="generator">
+        <div class="generator__result-half">
+          <p class="generator__result">P4$5W0rD!</p>
+          <button class="generator__copy-btn">
+            <img
+              src="./assets/images/icon-copy.svg"
+              class="generator__copy-icon"
+              alt="Copy icon"
+            />
+          </button>
+        </div>
+        <div class="generator__settings-half">
+          <form action="#" class="generator__form">
+            <div class="generator__slider-section">
+              <div class="generator__slider-head">
+                <p class="generator__length-text">Character Length</p>
+                <span class="generator__length-value">10</span>
+              </div>
+              <input
+                type="range"
+                id="slider"
+                class="generator__slider-input"
+                min="0"
+                max="20"
+              />
+            </div>
+            <div class="generator__options-section">
+              <label class="generator__checkbox-label">
+                <input type="checkbox" class="generator__checkbox" />
+                Include Uppercase Letters
+              </label>
+              <label class="generator__checkbox-label">
+                <input type="checkbox" class="generator__checkbox" />
+                Include Lowercase Letters
+              </label>
+              <label class="generator__checkbox-label">
+                <input type="checkbox" class="generator__checkbox" />
+                Include Numbers
+              </label>
+              <label class="generator__checkbox-label">
+                <input type="checkbox" class="generator__checkbox" />
+                Include Symbols
+              </label>
+            </div>
+            <div class="generator__strength-section">
+              <p class="generator__strength-text">Strength</p>
+              <div class="generator__strength-bars-container">
+                <div class="generator__strength-bar"></div>
+                <div class="generator__strength-bar"></div>
+                <div class="generator__strength-bar"></div>
+                <div class="generator__strength-bar"></div>
+              </div>
+            </div>
+            <button type="submit" class="generator__generate-btn">
+              Generate
+              <img
+                src="./assets/images/icon-arrow-right.svg"
+                class="generator__arrow-icon"
+                alt="Arrow icon"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+  margin-bottom: 30px;
+
+  &__title {
+    color: $light;
+  }
+}
