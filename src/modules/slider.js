@@ -12,6 +12,6 @@ function updateLengthValue(value) {
 }
 
 function updateSliderColor(value) {
-  const breakPoint = (value / 20) * 100;
-  slider.style.background = `linear-gradient(90deg, #a4ffaf ${breakPoint}%, #18171f ${breakPoint}%)`;
+  const breakpoint = (value / 20) * 100;
+  slider.style.background = `linear-gradient(90deg, #a4ffaf ${breakpoint}%, #18171f ${breakpoint}%)`;
 }
