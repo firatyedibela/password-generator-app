@@ -27,9 +27,33 @@
     opacity: 0.25;
   }
 
+  &__result--active {
+    opacity: 1;
+  }
+
+  &__copy {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__copied-text {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: $green;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
   &__copy-btn {
     background: none;
     border: none;
+
+    &--disabled {
+      pointer-events: none;
+    }
   }
 
   &__settings-half {

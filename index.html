@@ -24,13 +24,18 @@
       <div class="generator">
         <div class="generator__result-half">
           <p class="generator__result">P4$5W0rD!</p>
-          <button class="generator__copy-btn">
-            <img
-              src="./assets/images/icon-copy.svg"
-              class="generator__copy-icon"
-              alt="Copy icon"
-            />
-          </button>
+          <div class="generator__copy">
+            <p class="generator__copied-text generator__copied-text--hidden">
+              Copied
+            </p>
+            <button class="generator__copy-btn">
+              <img
+                src="./assets/images/icon-copy.svg"
+                class="generator__copy-icon"
+                alt="Copy icon"
+              />
+            </button>
+          </div>
         </div>
         <div class="generator__settings-half">
           <form action="#" class="generator__form">
@@ -42,36 +47,58 @@
               <input
                 type="range"
                 id="slider"
+                name="length"
                 class="generator__slider-input"
-                min="0"
+                min="1"
                 max="20"
               />
             </div>
             <div class="generator__options-section">
               <label class="generator__checkbox-label">
-                <input type="checkbox" class="generator__checkbox" />
+                <input
+                  name="uppercase"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
                 Include Uppercase Letters
               </label>
               <label class="generator__checkbox-label">
-                <input type="checkbox" class="generator__checkbox" />
+                <input
+                  name="lowercase"
+                  data-option-type="uppercase"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
                 Include Lowercase Letters
               </label>
               <label class="generator__checkbox-label">
-                <input type="checkbox" class="generator__checkbox" />
+                <input
+                  name="numbers"
+                  data-option-type="lowercase"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
                 Include Numbers
               </label>
               <label class="generator__checkbox-label">
-                <input type="checkbox" class="generator__checkbox" />
+                <input
+                  name="symbols"
+                  type="checkbox"
+                  class="generator__checkbox"
+                />
                 Include Symbols
               </label>
             </div>
             <div class="generator__strength-section">
-              <p class="generator__strength-text">Strength</p>
-              <div class="generator__strength-bars-container">
-                <div class="generator__strength-bar"></div>
-                <div class="generator__strength-bar"></div>
-                <div class="generator__strength-bar"></div>
-                <div class="generator__strength-bar"></div>
+              <p class="generator__strength-title">Strength</p>
+              <div class="generator__strength-display">
+                <p class="generator__strength-text"></p>
+                <div class="generator__strength-bars-container">
+                  <div class="generator__strength-bar bar"></div>
+                  <div class="generator__strength-bar bar"></div>
+                  <div class="generator__strength-bar bar"></div>
+                  <div class="generator__strength-bar bar"></div>
+                </div>
               </div>
             </div>
             <button type="submit" class="generator__generate-btn">

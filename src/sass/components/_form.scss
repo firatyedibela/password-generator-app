@@ -71,11 +71,23 @@
     background-color: $very-dark;
   }
 
-  &__strength-text {
+  &__strength-title {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     color: $gray;
+  }
+
+  &__strength-display {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__strength-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    color: $light;
   }
 
   &__strength-bars-container {
@@ -87,6 +99,26 @@
     width: 10px;
     height: 28px;
     border: 2px solid $light;
+
+    &[data-level='1'] {
+      background-color: $red;
+      border: none;
+    }
+
+    &[data-level='2'] {
+      background-color: $orange;
+      border: none;
+    }
+
+    &[data-level='3'] {
+      background-color: $yellow;
+      border: none;
+    }
+
+    &[data-level='4'] {
+      background-color: $green;
+      border: none;
+    }
   }
 
   &__generate-btn {
