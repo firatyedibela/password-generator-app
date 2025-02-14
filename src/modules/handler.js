@@ -1,7 +1,7 @@
 import { generatorDOM } from './dom';
 
 export const handlers = (function () {
-  function handleCopy(e) {
+  function handleCopy() {
     const passwordNode = document.querySelector('.generator__result');
 
     // Copy only if a password was generated
