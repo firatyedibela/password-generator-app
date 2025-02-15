@@ -20,6 +20,7 @@
     justify-content: space-between;
     padding: 19px 32px;
     background-color: $dark;
+    height: 80px;
   }
 
   &__result {
@@ -27,6 +28,22 @@
     font-weight: bold;
     color: $light;
     opacity: 0.25;
+
+    &.medium {
+      font-size: 28px;
+    }
+
+    &.small {
+      font-size: 20px;
+    }
+
+    &.very-small {
+      font-size: 18px;
+    }
+
+    &.extra-small {
+      font-size: 14px;
+    }
   }
 
   &__result--active {
@@ -79,6 +96,10 @@
 
     &__result {
       font-size: 24px;
+    }
+
+    &__copy {
+      gap: 8px;
     }
 
     &__copy-icon {
