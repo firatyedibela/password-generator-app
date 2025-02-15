@@ -7,11 +7,6 @@
     gap: 32px;
   }
 
-  &__copy-icon:hover {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
-      hue-rotate(93deg) brightness(103%) contrast(103%);
-  }
-
   &__options-section {
     display: flex;
     flex-direction: column;
@@ -20,7 +15,7 @@
 
   &__checkbox-label {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     cursor: pointer;
     user-select: none;
     font-weight: bold;
@@ -149,5 +144,42 @@
   &__arrow-icon {
     width: 12px;
     transition: all 300ms;
+  }
+}
+
+@media (max-width: 375px) {
+  .generator {
+    &__form {
+      gap: 0;
+    }
+
+    &__options-section {
+      margin-bottom: 32px;
+      gap: 16px;
+    }
+
+    &__checkbox-label {
+      font-size: 16px;
+      gap: 20px;
+    }
+
+    &__strength-section {
+      padding: 0px 16px;
+      height: 56px;
+      margin-bottom: 16px;
+    }
+
+    &__strength-title {
+      font-size: 16px;
+    }
+
+    &__strength-text {
+      font-size: 18px;
+    }
+
+    &__generate-btn {
+      font-size: 16px;
+      padding: 15.5px 0px;
+    }
   }
 }

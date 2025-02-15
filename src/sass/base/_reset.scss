@@ -10,7 +10,11 @@
 }
 
 body {
-  background-color: $very-dark;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 19, 27, 1) 0%,
+    rgba(8, 7, 11, 1) 100%
+  );
 }
 
 img {

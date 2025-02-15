@@ -8,6 +8,21 @@
     margin-bottom: 16px;
   }
 
+  &__length-text {
+    font-size: 18px;
+    color: $light;
+  }
+
+  &__length-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: $green;
+  }
+
+  &__slider-main {
+    height: 28px;
+  }
+
   &__slider-input {
     appearance: none;
     width: 100%;
@@ -38,15 +53,24 @@
     background-color: $very-dark;
     border: 2px solid $green;
   }
+}
 
-  &__length-text {
-    font-size: 18px;
-    color: $light;
-  }
+@media (max-width: 375px) {
+  .generator {
+    &__slider-section {
+      margin-bottom: 32px;
+    }
 
-  &__length-value {
-    font-size: 32px;
-    font-weight: bold;
-    color: $green;
+    &__slider-head {
+      margin-bottom: 8px;
+    }
+
+    &__length-text {
+      font-size: 16px;
+    }
+
+    &__length-value {
+      font-size: 24px;
+    }
   }
 }

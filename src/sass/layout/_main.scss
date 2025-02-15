@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .generator {
@@ -56,8 +58,39 @@
     }
   }
 
+  &__copy-icon:hover {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(93deg) brightness(103%) contrast(103%);
+  }
+
   &__settings-half {
     background-color: $dark;
     padding: 24px 32px 32px 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .generator {
+    gap: 16px;
+
+    &__result-half {
+      padding: 16px;
+    }
+
+    &__result {
+      font-size: 24px;
+    }
+
+    &__copy-icon {
+      width: 17.5px;
+    }
+
+    &__copied-text {
+      font-size: 16px;
+    }
+
+    &__settings-half {
+      padding: 16px;
+    }
   }
 }
